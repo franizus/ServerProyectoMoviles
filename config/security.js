@@ -1,20 +1,20 @@
 /**
- * Security Settings
- * (sails.config.security)
- *
- * These settings affect aspects of your app's security, such
- * as how it deals with cross-origin requests (CORS) and which
- * routes require a CSRF token to be included with the request.
- *
- * For an overview of how Sails handles security, see:
- * https://sailsjs.com/documentation/concepts/security
- *
- * For additional options and more information, see:
- * https://sailsjs.com/config/security
- */
+* Security Settings
+* (sails.config.security)
+*
+* These settings affect aspects of your app's security, such
+* as how it deals with cross-origin requests (CORS) and which
+* routes require a CSRF token to be included with the request.
+*
+* For an overview of how Sails handles security, see:
+* https://sailsjs.com/documentation/concepts/security
+*
+* For additional options and more information, see:
+* https://sailsjs.com/config/security
+*/
 
 module.exports.security = {
-
+  
   /***************************************************************************
   *                                                                          *
   * CORS is like a more modern version of JSONP-- it allows your application *
@@ -27,14 +27,14 @@ module.exports.security = {
   * https://sailsjs.com/docs/concepts/security/cors                          *
   *                                                                          *
   ***************************************************************************/
-
-  // cors: {
-  //   allRoutes: false,
-  //   allowOrigins: '*',
-  //   allowCredentials: false,
-  // },
-
-
+  
+  cors: {
+    allRoutes: false,
+    allowOrigins: '*',
+    allowCredentials: false,
+  },
+  
+  
   /****************************************************************************
   *                                                                           *
   * By default, Sails' built-in CSRF protection is disabled to facilitate     *
@@ -48,7 +48,7 @@ module.exports.security = {
   * https://sailsjs.com/docs/concepts/security/csrf                           *
   *                                                                           *
   ****************************************************************************/
-
+  
   // csrf: false
-
+  
 };
